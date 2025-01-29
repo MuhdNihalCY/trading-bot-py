@@ -251,21 +251,3 @@ if __name__ == "__main__":
         interval='1h'
     )
     bot.run_bot()
-    
-    
-# # Example usage
-# if __name__ == "__main__":
-#     api_key = "XKD8LGAeesBm2rBqTb9mFykKqNn6smdIJkqJzSAfdYWEnc9ulMT63fIJqV838fTd"
-#     api_secret = "wgZrkklW06ej9K8eJnaG97wEPqxhAZX8kWVsIrQLWYSQpD1AKWX1Iec9LNTkcLd3"
-    
-#     # Get trading pair from user
-#     symbol = input("Enter trading pair (default BTCUSDT): ") or "BTCUSDT"
-    
-    
-#     bot = CryptoTradingBot(
-#         api_key=api_key,
-#         api_secret=api_secret,
-#         symbol='BTCUSDT',
-#         interval='1h'
-#     )
-#     bot.run_bot()
