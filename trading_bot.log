@@ -1,0 +1,80 @@
+2025-01-29 16:11:07,700 - INFO - Connecting to Binance...
+2025-01-29 16:11:08,038 - INFO - 
+Starting Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+        
+2025-01-29 16:11:08,039 - INFO - Fetching historical data for BTCUSDT...
+2025-01-29 16:11:08,372 - INFO - Historical data fetched successfully
+2025-01-29 16:11:08,372 - INFO - Calculating trading signals...
+2025-01-29 16:11:08,379 - INFO - 
+Current Market Conditions:
+------------------------
+Price: 102656.73
+Short MA (20): 102067.77
+Long MA (50): 101703.63
+            
+2025-01-29 16:11:08,389 - INFO - Market data saved to trading_results/market_data_20250129_161108.csv
+2025-01-29 16:11:08,390 - INFO - 
+Signal Analysis:
+---------------
+Previous Signal: 0
+Current Signal: 1
+                    
+2025-01-29 16:11:08,390 - INFO - Checking account balance...
+2025-01-29 16:11:08,544 - INFO - Current Balances:
+2025-01-29 16:11:08,544 - INFO - Waiting for next check...
+2025-01-29 16:12:08,549 - INFO - Fetching historical data for BTCUSDT...
+2025-01-29 16:12:08,851 - INFO - Historical data fetched successfully
+2025-01-29 16:12:08,852 - INFO - Calculating trading signals...
+2025-01-29 16:12:08,854 - INFO - 
+Current Market Conditions:
+------------------------
+Price: 102581.39
+Short MA (20): 102064.00
+Long MA (50): 101702.12
+            
+2025-01-29 16:12:08,857 - INFO - Market data saved to trading_results/market_data_20250129_161208.csv
+2025-01-29 16:12:08,858 - INFO - 
+Signal Analysis:
+---------------
+Previous Signal: 0
+Current Signal: 1
+                    
+2025-01-29 16:12:08,858 - INFO - Checking account balance...
+2025-01-29 16:12:09,003 - INFO - Current Balances:
+2025-01-29 16:12:09,003 - INFO - Waiting for next check...
+2025-01-29 17:14:59,494 - INFO - Connecting to Binance...
+2025-01-29 17:14:59,724 - INFO - 
+Starting Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+        
+2025-01-29 17:14:59,725 - INFO - Fetching historical data for BTCUSDT...
+2025-01-29 17:15:00,077 - INFO - Historical data fetched successfully
+2025-01-29 17:15:00,077 - INFO - Calculating trading signals...
+2025-01-29 17:15:00,081 - INFO - 
+Current Market Conditions:
+------------------------
+Price: 102727.53
+Short MA (20): 102059.76
+Long MA (50): 101767.50
+            
+2025-01-29 17:15:00,086 - INFO - Market data saved to trading_results/market_data_20250129_171500.csv
+2025-01-29 17:15:00,086 - INFO - 
+Signal Analysis:
+---------------
+Previous Signal: 0
+Current Signal: 1
+                    
+2025-01-29 17:15:00,086 - INFO - Checking account balance...
+2025-01-29 17:15:00,231 - INFO - Current Balances:
+2025-01-29 17:15:00,231 - INFO - Waiting for next check...
