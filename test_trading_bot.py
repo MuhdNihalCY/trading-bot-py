@@ -6,6 +6,7 @@ import time
 from datetime import datetime
 import logging
 import json
+from binance.client import Client  # Make sure you import the Binance Client
 
 # Load .env file
 load_dotenv()
@@ -41,6 +42,10 @@ class CryptoTradingBot:
         # Create results directory
         if not os.path.exists('simulation_results'):
             os.makedirs('simulation_results')
+
+        # Set up Binance API client (for real-time data fetching)
+        if not self.simulation_mode:
+            self.client = Client(api_key=os.getenv("API_KEY"), api_secret=os.getenv("API_SECRET"))
             
     def save_trade_log(self):
         """
@@ -53,16 +58,33 @@ class CryptoTradingBot:
         
     def get_historical_data(self):
         """
-        Simulate fetching historical klines/candlestick data
+        Fetch historical kline/candlestick data from Binance
         """
-        self.logger.info(f"Fetching simulated historical data for {self.symbol}...")
-        # Simulate historical price data
-        timestamp = pd.date_range(end=datetime.now(), periods=self.moving_avg_long + 10, freq='h')
-        close = np.random.normal(loc=30000, scale=1000, size=len(timestamp))  # Simulate BTC price ~30k
-        df = pd.DataFrame({"timestamp": timestamp, "close": close})
-        self.logger.info("Simulated historical data generated successfully")
-        return df
-    
+        self.logger.info(f"Fetching historical data for {self.symbol}...")
+        try:
+            if self.simulation_mode:
+                # Simulate historical price data
+                timestamp = pd.date_range(end=datetime.now(), periods=self.moving_avg_long + 10, freq='h')
+                close = np.random.normal(loc=30000, scale=1000, size=len(timestamp))  # Simulate BTC price ~30k
+                df = pd.DataFrame({"timestamp": timestamp, "close": close})
+            else:
+                # Ensure the interval is in lowercase
+                interval_lower = self.interval.lower()  # Convert interval to lowercase
+                # Fetch data from Binance API
+                klines = self.client.get_historical_klines(self.symbol, interval_lower, f"{self.moving_avg_long + 10} hours ago UTC")
+                df = pd.DataFrame(klines, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume', 'close_time', 
+                                                   'quote_asset_volume', 'number_of_trades', 'taker_buy_base', 
+                                                   'taker_buy_quote', 'ignore'])
+                df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+                df['close'] = pd.to_numeric(df['close'])
+                df = df[['timestamp', 'close']]
+            
+            self.logger.info("Historical data fetched successfully.")
+            return df
+        except Exception as e:
+            self.logger.error(f"Error fetching historical data: {e}")
+            return None
+
     def calculate_signals(self, df):
         """
         Calculate trading signals based on moving average crossover
@@ -82,34 +104,35 @@ class CryptoTradingBot:
             self.logger.error(f"Error calculating signals: {e}")
             return None
 
-        def place_order_simulation(self, side, quantity, price):
-            """
-            Simulate placing a market order
-            """
-            base_asset = self.symbol.replace('USDT', '')
-            self.logger.info(f"Simulating {side} order for {quantity} {self.symbol} at price {price}...")
+    def place_order_simulation(self, side, quantity, price):
+        """
+        Simulate placing a market order
+        """
+        base_asset = self.symbol.replace('USDT', '')
+        self.logger.info(f"Simulating {side} order for {quantity} {self.symbol} at price {price}...")
 
-            if side == "BUY":
-                cost = quantity * price
-                if self.digital_balance["USDT"] >= cost:
-                    self.digital_balance["USDT"] -= cost
-                    self.digital_balance[base_asset] += quantity
-                    self.trade_log.append({"type": "BUY", "quantity": quantity, "price": price, "balance": dict(self.digital_balance)})
-                    self.logger.info(f"Simulated BUY order completed.")
-                else:
-                    self.logger.warning("Not enough USDT for the simulated BUY order.")
+        if side == "BUY":
+            cost = quantity * price
+            if self.digital_balance["USDT"] >= cost:
+                self.digital_balance["USDT"] -= cost
+                self.digital_balance[base_asset] += quantity
+                self.trade_log.append({"type": "BUY", "quantity": quantity, "price": price, "balance": dict(self.digital_balance)})
+                self.logger.info(f"Simulated BUY order completed.")
+            else:
+                self.logger.warning("Not enough USDT for the simulated BUY order.")
 
-            elif side == "SELL":
-                if self.digital_balance[base_asset] >= quantity:
-                    self.digital_balance[base_asset] -= quantity
-                    self.digital_balance["USDT"] += quantity * price
-                    self.trade_log.append({"type": "SELL", "quantity": quantity, "price": price, "balance": dict(self.digital_balance)})
-                    self.logger.info(f"Simulated SELL order completed.")
-                else:
-                    self.logger.warning("Not enough BTC for the simulated SELL order.")
+        elif side == "SELL":
+            if self.digital_balance[base_asset] >= quantity:
+                self.digital_balance[base_asset] -= quantity
+                self.digital_balance["USDT"] += quantity * price
+                self.trade_log.append({"type": "SELL", "quantity": quantity, "price": price, "balance": dict(self.digital_balance)})
+                self.logger.info(f"Simulated SELL order completed.")
+            else:
+                self.logger.warning("Not enough BTC for the simulated SELL order.")
 
-            # Log updated balance after every order
-            self.log_current_balance()
+        # Log updated balance after every order
+        self.log_current_balance()
+
     def log_current_balance(self):
         """
         Log the current simulated balance
@@ -117,7 +140,7 @@ class CryptoTradingBot:
         self.logger.info("Current Balance:")
         for asset, balance in self.digital_balance.items():
             self.logger.info(f"{asset}: {balance:.6f}")
-            
+
     def run_bot(self):
         """
         Main bot loop in simulation mode
@@ -140,7 +163,7 @@ Initial Balance: {self.digital_balance}
                 if df is not None:
                     df = self.calculate_signals(df)
                     
-                    # Log current balance
+                    # Log current balance before any trade
                     self.log_current_balance()
 
                     # Get latest signal
@@ -184,7 +207,7 @@ if __name__ == "__main__":
     bot = CryptoTradingBot(
         symbol="BTCUSDT",
         interval='1h',
-        simulation_mode=True,
+        simulation_mode=False,  # Set this to False to use real-time Binance data
         initial_balance=10000
     )
     bot.run_bot()

@@ -120,3 +120,112 @@ Initial Balance: {'USDT': 10000, 'BTC': 0}
 2025-01-30 15:47:48,429 - INFO - Previous Signal: -1, Current Signal: -1
 2025-01-30 15:47:48,429 - INFO - Trade log saved to simulation_results/trade_log_20250130_154748.json
 2025-01-30 15:47:48,429 - INFO - Waiting for next simulation interval...
+2025-01-30 15:48:48,445 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:48:48,499 - INFO - Simulated historical data generated successfully
+2025-01-30 15:48:48,502 - INFO - Calculating trading signals...
+2025-01-30 15:48:48,523 - INFO - Current Balance:
+2025-01-30 15:48:48,523 - INFO - USDT: 10000.000000
+2025-01-30 15:48:48,523 - INFO - BTC: 0.000000
+2025-01-30 15:48:48,523 - INFO - Previous Signal: 1, Current Signal: 1
+2025-01-30 15:48:48,525 - INFO - Trade log saved to simulation_results/trade_log_20250130_154848.json
+2025-01-30 15:48:48,525 - INFO - Waiting for next simulation interval...
+2025-01-30 15:49:48,526 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:49:48,536 - INFO - Simulated historical data generated successfully
+2025-01-30 15:49:48,536 - INFO - Calculating trading signals...
+2025-01-30 15:49:48,541 - INFO - Current Balance:
+2025-01-30 15:49:48,542 - INFO - USDT: 10000.000000
+2025-01-30 15:49:48,542 - INFO - BTC: 0.000000
+2025-01-30 15:49:48,542 - INFO - Previous Signal: 1, Current Signal: 1
+2025-01-30 15:49:48,543 - INFO - Trade log saved to simulation_results/trade_log_20250130_154948.json
+2025-01-30 15:49:48,543 - INFO - Waiting for next simulation interval...
+2025-01-30 15:50:48,556 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:50:48,652 - INFO - Simulated historical data generated successfully
+2025-01-30 15:50:48,653 - INFO - Calculating trading signals...
+2025-01-30 15:50:48,666 - INFO - Current Balance:
+2025-01-30 15:50:48,666 - INFO - USDT: 10000.000000
+2025-01-30 15:50:48,666 - INFO - BTC: 0.000000
+2025-01-30 15:50:48,667 - INFO - Previous Signal: 1, Current Signal: 1
+2025-01-30 15:50:48,668 - INFO - Trade log saved to simulation_results/trade_log_20250130_155048.json
+2025-01-30 15:50:48,668 - INFO - Waiting for next simulation interval...
+2025-01-30 15:51:48,674 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:51:48,683 - INFO - Simulated historical data generated successfully
+2025-01-30 15:51:48,684 - INFO - Calculating trading signals...
+2025-01-30 15:51:48,692 - INFO - Current Balance:
+2025-01-30 15:51:48,692 - INFO - USDT: 10000.000000
+2025-01-30 15:51:48,692 - INFO - BTC: 0.000000
+2025-01-30 15:51:48,692 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 15:51:48,694 - INFO - Trade log saved to simulation_results/trade_log_20250130_155148.json
+2025-01-30 15:51:48,694 - INFO - Waiting for next simulation interval...
+2025-01-30 15:52:48,708 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:52:48,767 - INFO - Simulated historical data generated successfully
+2025-01-30 15:52:48,768 - INFO - Calculating trading signals...
+2025-01-30 15:52:48,781 - INFO - Current Balance:
+2025-01-30 15:52:48,781 - INFO - USDT: 10000.000000
+2025-01-30 15:52:48,781 - INFO - BTC: 0.000000
+2025-01-30 15:52:48,781 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 15:52:48,781 - INFO - Trade log saved to simulation_results/trade_log_20250130_155248.json
+2025-01-30 15:52:48,782 - INFO - Waiting for next simulation interval...
+2025-01-30 15:53:48,785 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:53:48,794 - INFO - Simulated historical data generated successfully
+2025-01-30 15:53:48,795 - INFO - Calculating trading signals...
+2025-01-30 15:53:48,801 - INFO - Current Balance:
+2025-01-30 15:53:48,802 - INFO - USDT: 10000.000000
+2025-01-30 15:53:48,802 - INFO - BTC: 0.000000
+2025-01-30 15:53:48,802 - INFO - Previous Signal: 1, Current Signal: 1
+2025-01-30 15:53:48,803 - INFO - Trade log saved to simulation_results/trade_log_20250130_155348.json
+2025-01-30 15:53:48,803 - INFO - Waiting for next simulation interval...
+2025-01-30 15:54:48,809 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:54:48,817 - INFO - Simulated historical data generated successfully
+2025-01-30 15:54:48,818 - INFO - Calculating trading signals...
+2025-01-30 15:54:48,825 - INFO - Current Balance:
+2025-01-30 15:54:48,826 - INFO - USDT: 10000.000000
+2025-01-30 15:54:48,826 - INFO - BTC: 0.000000
+2025-01-30 15:54:48,826 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 15:54:48,827 - INFO - Trade log saved to simulation_results/trade_log_20250130_155448.json
+2025-01-30 15:54:48,828 - INFO - Waiting for next simulation interval...
+2025-01-30 15:55:48,832 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:55:48,843 - INFO - Simulated historical data generated successfully
+2025-01-30 15:55:48,844 - INFO - Calculating trading signals...
+2025-01-30 15:55:48,851 - INFO - Current Balance:
+2025-01-30 15:55:48,851 - INFO - USDT: 10000.000000
+2025-01-30 15:55:48,851 - INFO - BTC: 0.000000
+2025-01-30 15:55:48,852 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 15:55:48,853 - INFO - Trade log saved to simulation_results/trade_log_20250130_155548.json
+2025-01-30 15:55:48,853 - INFO - Waiting for next simulation interval...
+2025-01-30 15:56:48,857 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:56:48,865 - INFO - Simulated historical data generated successfully
+2025-01-30 15:56:48,865 - INFO - Calculating trading signals...
+2025-01-30 15:56:48,872 - INFO - Current Balance:
+2025-01-30 15:56:48,873 - INFO - USDT: 10000.000000
+2025-01-30 15:56:48,873 - INFO - BTC: 0.000000
+2025-01-30 15:56:48,873 - INFO - Previous Signal: -1, Current Signal: 1
+2025-01-30 15:56:48,873 - INFO - BUY SIGNAL DETECTED!
+2025-01-30 15:56:48,875 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'place_order_simulation'
+2025-01-30 15:57:48,876 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:57:48,883 - INFO - Simulated historical data generated successfully
+2025-01-30 15:57:48,884 - INFO - Calculating trading signals...
+2025-01-30 15:57:48,891 - INFO - Current Balance:
+2025-01-30 15:57:48,892 - INFO - USDT: 10000.000000
+2025-01-30 15:57:48,892 - INFO - BTC: 0.000000
+2025-01-30 15:57:48,892 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 15:57:48,893 - INFO - Trade log saved to simulation_results/trade_log_20250130_155748.json
+2025-01-30 15:57:48,893 - INFO - Waiting for next simulation interval...
+2025-01-30 16:02:38,178 - INFO - 
+Starting Simulation Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+Initial Balance: {'USDT': 10000, 'BTC': 0}
+        
+2025-01-30 16:02:38,179 - INFO - Fetching historical data for BTCUSDT...
+2025-01-30 16:02:38,529 - INFO - Historical data fetched successfully.
+2025-01-30 16:02:38,529 - INFO - Calculating trading signals...
+2025-01-30 16:02:38,533 - INFO - Current Balance:
+2025-01-30 16:02:38,533 - INFO - USDT: 10000.000000
+2025-01-30 16:02:38,533 - INFO - BTC: 0.000000
+2025-01-30 16:02:38,533 - INFO - Previous Signal: 1, Current Signal: 1
+2025-01-30 16:02:38,534 - INFO - Trade log saved to simulation_results/trade_log_20250130_160238.json
+2025-01-30 16:02:38,534 - INFO - Waiting for next simulation interval...
