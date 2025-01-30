@@ -1,0 +1,122 @@
+2025-01-30 13:08:39,364 - INFO - 
+Starting Simulation Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+Initial Balance: {'USDT': 10000, 'BTC': 0}
+        
+2025-01-30 13:08:39,364 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 13:08:39,369 - INFO - Simulated historical data generated successfully
+2025-01-30 13:08:39,369 - INFO - Calculating trading signals...
+2025-01-30 13:08:39,373 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 13:08:39,374 - INFO - Trade log saved to simulation_results/trade_log_20250130_130839.json
+2025-01-30 13:08:39,374 - INFO - Waiting for next simulation interval...
+2025-01-30 13:09:39,386 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 13:09:39,397 - INFO - Simulated historical data generated successfully
+2025-01-30 13:09:39,398 - INFO - Calculating trading signals...
+2025-01-30 13:09:39,403 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 13:09:39,404 - INFO - Trade log saved to simulation_results/trade_log_20250130_130939.json
+2025-01-30 13:09:39,404 - INFO - Waiting for next simulation interval...
+2025-01-30 13:10:40,588 - INFO - 
+Starting Simulation Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+Initial Balance: {'USDT': 10000, 'BTC': 0}
+        
+2025-01-30 13:10:40,588 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 13:10:40,592 - INFO - Simulated historical data generated successfully
+2025-01-30 13:10:40,592 - INFO - Calculating trading signals...
+2025-01-30 13:10:40,597 - INFO - Previous Signal: 1, Current Signal: 1
+2025-01-30 13:10:40,597 - INFO - Trade log saved to simulation_results/trade_log_20250130_131040.json
+2025-01-30 13:10:40,597 - INFO - Waiting for next simulation interval...
+2025-01-30 13:11:40,611 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 13:11:40,621 - INFO - Simulated historical data generated successfully
+2025-01-30 13:11:40,622 - INFO - Calculating trading signals...
+2025-01-30 13:11:40,628 - INFO - Previous Signal: 1, Current Signal: -1
+2025-01-30 13:11:40,629 - INFO - SELL SIGNAL DETECTED!
+2025-01-30 13:11:40,629 - INFO - Simulating SELL order for 0.001 BTCUSDT at price 29477.605261049022...
+2025-01-30 13:11:40,629 - WARNING - Not enough BTC for the simulated SELL order.
+2025-01-30 13:11:40,630 - INFO - Trade log saved to simulation_results/trade_log_20250130_131140.json
+2025-01-30 13:11:40,630 - INFO - Waiting for next simulation interval...
+2025-01-30 13:12:40,632 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 13:12:40,644 - INFO - Simulated historical data generated successfully
+2025-01-30 13:12:40,645 - INFO - Calculating trading signals...
+2025-01-30 13:12:40,650 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 13:12:40,652 - INFO - Trade log saved to simulation_results/trade_log_20250130_131240.json
+2025-01-30 13:12:40,652 - INFO - Waiting for next simulation interval...
+2025-01-30 13:13:40,656 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 13:13:40,662 - INFO - Simulated historical data generated successfully
+2025-01-30 13:13:40,663 - INFO - Calculating trading signals...
+2025-01-30 13:13:40,676 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 13:13:40,681 - INFO - Trade log saved to simulation_results/trade_log_20250130_131340.json
+2025-01-30 13:13:40,681 - INFO - Waiting for next simulation interval...
+2025-01-30 15:42:44,990 - INFO - 
+Starting Simulation Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+Initial Balance: {'USDT': 10000, 'BTC': 0}
+        
+2025-01-30 15:42:44,990 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:42:44,996 - INFO - Simulated historical data generated successfully
+2025-01-30 15:42:44,996 - INFO - Calculating trading signals...
+2025-01-30 15:42:45,000 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'log_current_balance'
+2025-01-30 15:43:45,017 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:43:45,054 - INFO - Simulated historical data generated successfully
+2025-01-30 15:43:45,055 - INFO - Calculating trading signals...
+2025-01-30 15:43:45,066 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'log_current_balance'
+2025-01-30 15:44:45,072 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:44:45,082 - INFO - Simulated historical data generated successfully
+2025-01-30 15:44:45,082 - INFO - Calculating trading signals...
+2025-01-30 15:44:45,088 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'log_current_balance'
+2025-01-30 15:45:18,828 - INFO - 
+Starting Simulation Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+Initial Balance: {'USDT': 10000, 'BTC': 0}
+        
+2025-01-30 15:45:18,828 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:45:18,828 - INFO - Simulated historical data generated successfully
+2025-01-30 15:45:18,828 - INFO - Calculating trading signals...
+2025-01-30 15:45:18,829 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'log_current_balance'
+2025-01-30 15:46:18,845 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:46:18,902 - INFO - Simulated historical data generated successfully
+2025-01-30 15:46:18,903 - INFO - Calculating trading signals...
+2025-01-30 15:46:18,916 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'log_current_balance'
+2025-01-30 15:47:18,930 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:47:18,967 - INFO - Simulated historical data generated successfully
+2025-01-30 15:47:18,968 - INFO - Calculating trading signals...
+2025-01-30 15:47:18,990 - ERROR - Error in simulation loop: 'CryptoTradingBot' object has no attribute 'log_current_balance'
+2025-01-30 15:47:48,422 - INFO - 
+Starting Simulation Trading Bot
+-------------------
+Symbol: BTCUSDT
+Interval: 1h
+Short MA Period: 20
+Long MA Period: 50
+Trading Quantity: 0.001
+Initial Balance: {'USDT': 10000, 'BTC': 0}
+        
+2025-01-30 15:47:48,422 - INFO - Fetching simulated historical data for BTCUSDT...
+2025-01-30 15:47:48,426 - INFO - Simulated historical data generated successfully
+2025-01-30 15:47:48,426 - INFO - Calculating trading signals...
+2025-01-30 15:47:48,429 - INFO - Current Balance:
+2025-01-30 15:47:48,429 - INFO - USDT: 10000.000000
+2025-01-30 15:47:48,429 - INFO - BTC: 0.000000
+2025-01-30 15:47:48,429 - INFO - Previous Signal: -1, Current Signal: -1
+2025-01-30 15:47:48,429 - INFO - Trade log saved to simulation_results/trade_log_20250130_154748.json
+2025-01-30 15:47:48,429 - INFO - Waiting for next simulation interval...
